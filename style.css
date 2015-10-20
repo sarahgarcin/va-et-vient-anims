@@ -1,0 +1,33 @@
+body {
+	width: 100%;
+	margin: 0;
+	background: #FFF;
+	font-family: helvetica, sans-serif;
+	overflow: hidden;
+}
+
+canvas {
+	width: 100%;
+	position: absolute;
+}
+
+h2{ font-size: 0.85em; font-weight: normal; letter-spacing: 0.1em;}
+
+.buttons-anim {
+	margin:auto;
+}
+
+.buttons-anim li {
+	display: inline-block;
+	list-style: none;
+}
+
+.buttons-anim .button{
+	width: auto;
+	/*height: 30px;*/
+	background-color: blue;
+	padding: 1px 30px;
+	cursor: pointer;
+	color: #FFF;
+
+}
