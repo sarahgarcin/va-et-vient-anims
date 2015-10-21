@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 function init(){
 	$('canvas').hide();
-	$('#pain').show();
+	$('#salsifis').show();
 	displayAnimations();
 
 }

@@ -33,6 +33,12 @@ function Salsifis(_sizeSal, _destination, _position, _amount, _dandineSpeed){
   this.path.selected = true;
   this.path.position = this.position;
   this.path.scale(this.sizeSal);
+
+  var matrix = new Matrix(1, 0, 0, 1, 0, 0);
+  // matrix.decompose();
+  // matrix.rotate(5, this.position.x, this.position.y);
+  this.path.transform(matrix);
+
 }
 
 Salsifis.prototype = {
@@ -82,9 +88,9 @@ function onFrame(event) {
   }
 }
 
-// //ALGUES
+//ALGUES
 // // The amount of segment points we want to create:
-// var amount = 5;
+// var amount = 10;
 
 // // The maximum height of the wave:
 // var height = 15;
@@ -112,8 +118,8 @@ function onFrame(event) {
 //         } else {
 //             this.align(boids);
 //         }
-//         // this.borders();
-//         // this.update();
+//         this.borders();
+//         this.update();
 //         this.calculateTail();
 //         // this.moveHead();
 //     },
@@ -147,15 +153,15 @@ function onFrame(event) {
 
 //         this.path = new Path({
 //             strokeColor: '#000d9e',
-//             strokeWidth: 9,
+//             strokeWidth: 10,
 //             strokeCap: 'round'
 //         });
 //         for (var i = 0; i < this.amount; i++)
 //             this.path.add(new Point());
 
 //         this.shortPath = new Path({
-//             strokeColor: 'red',
-//             strokeWidth: 8,
+//             strokeColor: '#000d9e',
+//             strokeWidth: 10,
 //             strokeCap: 'round'
 //         });
 //         console.log(Math.min(1,this.amount));
