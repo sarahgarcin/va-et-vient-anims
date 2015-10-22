@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 function init(){
 	$('canvas').hide();
-	$('#salsifis').show();
+	$('#navet').show();
 	displayAnimations();
 
 }
@@ -53,6 +53,15 @@ function displayAnimations(){
 				case "leg":
 					$("#legumes").hide();
 					break;
+				case "pai":
+					$("#pain").hide();
+					break;
+				case "tof":
+					$("#tofu").hide();
+					break;
+				case "nav":
+					$("#navet").hide();
+					break;
 			}
 		}
 		else{
@@ -92,6 +101,16 @@ function displayAnimations(){
 			
 				case "leg":
 					$("#legumes").show();
+					break;
+				case "pai":
+					$("#pain").show();
+					break;
+				case "tof":
+					$("#tofu").show();
+					break;
+
+				case "nav":
+					$("#navet").show();
 					break;
 			}
 		}
