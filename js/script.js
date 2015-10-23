@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 function init(){
 	$('canvas').hide();
-	$('#navet').show();
+	//$('#tofu2').show();
 	displayAnimations();
 
 }
@@ -57,7 +57,7 @@ function displayAnimations(){
 					$("#pain").hide();
 					break;
 				case "tof":
-					$("#tofu").hide();
+					$("#tofu2").hide();
 					break;
 				case "nav":
 					$("#navet").hide();
@@ -106,7 +106,7 @@ function displayAnimations(){
 					$("#pain").show();
 					break;
 				case "tof":
-					$("#tofu").show();
+					$("#tofu2").show();
 					break;
 
 				case "nav":
